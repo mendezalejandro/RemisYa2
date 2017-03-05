@@ -119,7 +119,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
         }
     }
 
-    public function getListaPersonas()
+    public static function getListaPersonas()
     {
         $test = new PersonasModelo();
         $PersonasBD = $test->GetInfoPersonas(-1,"","","","","","","","","","","");
